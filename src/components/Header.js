@@ -1,23 +1,10 @@
 import {HeartPulse,Menu, X } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 
 export const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-useEffect(() => {
-
-
-  if (window.google && window.google.translate) {
-
-    new window.google.translate.TranslateElement(
-      { pageLanguage: "en" },
-      "google_translate_element"
-    );
-  }
-  }, []);
-
 
   return (
     <header className="bg-white w-full shadow-md sticky top-0 z-50">
@@ -42,7 +29,6 @@ useEffect(() => {
           >
             Register / login
           </Link>       
-          <div className="border h-[40px] overflow-hidden" id="google_translate_element"></div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -76,7 +62,6 @@ useEffect(() => {
                     <a href="#about" className="text-gray-700 hover:text-blue-600 py-2" onClick={() => setIsSidebarOpen(false)}>About</a>
                     <a href="#faq" className="text-gray-700 hover:text-blue-600 py-2" onClick={() => setIsSidebarOpen(false)}>FAQ</a>
                     <div className="border-t pt-4">
-                         <div className="border h-[40px] overflow-hidden" id="google_translate_element"></div>
                         <Link to="/login" className="w-full text-center bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm" onClick={() => setIsSidebarOpen(false)}>
                             Register / Login
                         </Link>
