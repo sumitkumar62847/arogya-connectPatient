@@ -1,0 +1,44 @@
+/* Hide Google branding & banner */
+.goog-logo-link {
+  display: none !important;
+}
+.goog-te-gadget {
+  color: transparent !important;
+}
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+/* Style the dropdown */
+#google_translate_element select {
+  background: #f9fafb; /* Tailwind gray-50 */
+  border: 1px solid #d1d5db; /* Tailwind gray-300 */
+  padding: 6px 8px;
+  border-radius: 0.5rem; /* rounded-lg */
+  font-size: 14px;
+  color: #374151; /* gray-700 */
+}
+
+  /* Hide the top frame (Google Translate toolbar) */
+  .goog-te-banner-frame.skiptranslate {
+    display: none !important;
+  }
+
+
+  /* Hide the floating toolbar (sometimes bottom-right) */
+  .goog-te-gadget-icon,
+  .goog-te-balloon-frame,
+  .goog-te-menu-value span {
+    display: none !important;
+  }
+
+
+  /* Hides the Google Translate top banner */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+} 
+
+/* Hides the "Original" text tooltip that may appear */
+#goog-gt-tt {
+    display: none !important;
+}
